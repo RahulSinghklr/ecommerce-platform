@@ -6,7 +6,7 @@ export default function Checkout() {
 
   const handleCheckout = async () => {
     try {
-      const { data } = await axios.post("http://localhost:5000/api/orders", {
+      const { _ } = await axios.post("http://localhost:5000/api/orders", {
         items: cart,
       });
       alert("Order placed successfully!");
